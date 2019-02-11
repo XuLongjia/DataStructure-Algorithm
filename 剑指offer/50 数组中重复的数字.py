@@ -5,11 +5,7 @@
 '''
 
 '''
-应该是在线编辑器的bug
 
-思路一：
-
-未通过
 '''
 
 # -*- coding:utf-8 -*-
@@ -18,16 +14,10 @@ class Solution:
     # 函数返回True/False
     def duplicate(self, numbers, duplication):
         # write code here
-        if not numbers:
-            return -1
-        num = []
-
         for i in numbers:
-            if i in num:
+            if numbers.count(i) >=2:
                 duplication[0] = i
                 return True
-            else:
-                num.append(i)
         return False
 
 '''
